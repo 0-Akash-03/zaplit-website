@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaplit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/hero.css" />
+
+    <script src="/active js/nav.js" defer></script>
+    <script src="/active js/hero.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/">
+          <div class="nav-logo">
+            <img src="/images/zaplit-logo.png" alt="Zaplit Logo" />
+            <h1>Zaplit</h1>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="/pricing" class="nav-link">pricing</a>
+          <a href="/systems" class="nav-link">systems</a>
+        </div>
+
+        <div class="nav-cta">
+          <button class="nav-btn">
+            <a href="/chat">Let's chat &#x2192;</a>
+          </button>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-bg-grid">
+          <img src="/images/hero/grid-hero-bg.jpg" alt="Hero Background grid" />
+        </div>
+
+        <div class="main-content">
+          <h1 class="fade-in-up">
+            Scale your conversions with best SaaS conversion system
+          </h1>
+          <p class="fade-in-up">
+            With our one time conversion system, Companies have seen up to
+            <b>100% increase</b> in conversion rates.
+          </p>
+        </div>
+        <div class="cta-btn-container">
+          <button class="cta-btn fade-in-up delay-4">
+            <a href="/chat">level up conversions &#x2192;</a>
+          </button>
+        </div>
+
+        <ul class="boxes">
+          <!-- Add this canvas element right after the ul opening tag -->
+          <canvas id="connectionLine" class="connection-line"></canvas>
+          
+          <!-- Top Row -->
+          <div class="top-row">
+            <li>
+              <div class="small-box" id="box-1"><p>Custom Web <span>Traffic</span></p></div>
+            </li>
+            <li>
+              <div class="small-box" id="box-4">
+                <p><span>100%+ conversion</span> Growth</p>
+              </div>
+            </li>
+          </div>
+          <!-- Bottom Row -->
+          <div class="bottom-row">
+            <li class="box-middle-1">
+              <div class="small-box" id="box-2">
+                <p>Deploy the <span>System</span></p>
+              </div>
+            </li>
+            <li class="box-middle-2">
+              <div class="small-box" id="box-3">
+                <p>Let it run on <span>Automation</span></p>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+.main-content {
+  margin-top: 13rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-heading-1);
+  font-family: var(--font-primary);
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-des-1);
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-bg-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.12;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Apply different delays to elements */
+.main-content h1.fade-in-up {
+  animation-delay: 0.3s;
+}
+
+.main-content p.fade-in-up {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-btn {
+  background-color: var(--color-btn-1);
+  color: var(--color-white-key);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin: 2rem auto;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--color-btn-hover-1);
+  transform: translateY(-2px);
+}
+
+.cta-btn a {
+  text-decoration: none;
+  color: var(--color-white-key);
+  font-family: var(--font-secondary);
+}
+
+/* Boxes */
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75rem;
+  margin: auto;
+  padding: 0;
+  gap: 3rem; /* Increased gap between rows */
+  position: relative;
+  z-index: 1;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  margin-top: -1rem;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  margin-left: -2rem;
+  gap: 4rem;
+  width: 60%; /* Makes bottom row narrower than top row */
+}
+
+.boxes li {
+  background-color: white;
+  border-radius: 12px;
+  padding: 0.3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+}
+
+.small-box p {
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-gray-main-200);
+}
+
+.boxes span {
+  color: var(--color-gray-main-600);
+  font-weight: bold;
+}
+
+.connection-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Add a new delay class for the CTA button */
+.delay-4 {
+  animation-delay: 1.6s !important;
+}

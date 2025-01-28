@@ -1,0 +1,53 @@
+html {
+  --color-main-blue-1: rgb(92, 225, 230);
+  --color-main-red-2: rgb(251, 115, 114);
+  --color-main-yellow-3: rgb(254, 189, 89);
+
+  --color-btn-1: rgb(0, 0, 0);
+  --color-btn-hover-1: rgba(0, 0, 0, 0.87);
+
+  --color-heading-1: rgb(27, 43, 63);
+  --color-des-1: rgb(81, 81, 95);
+  --color-des-2: rgb(0, 0, 0);
+
+  --color-bg-main-1: rgb(242, 247, 247);
+  --color-bg-sec-1: rgb(194, 243, 244);
+  --color-bg-sec-2: rgb(245, 230, 166);
+  --color-bg-sec-3: rgb(251, 209, 145);
+  --color-bg-sec-4: rgb(129, 188, 247);
+
+  --color-tag-1: rgb(254, 189, 89);
+  --color-tag-2: rgb(129, 188, 247);
+
+  --color-gray-1: rgb(255, 255, 255);
+  --color-gray-2: rgb(249, 248, 246);
+  --color-gray-3: rgb(243, 242, 237);
+
+  --color-icon-1: rgb(230, 232, 236);
+  --color-icon-2: rgb(255, 233, 198);
+  --color-icon-3: rgb(237, 206, 227);
+  --color-icon-4: rgb(206, 211, 237);
+  --color-icon-5: rgb(237, 206, 206);
+  --color-icon-6: rgb(226, 237, 206);
+  --color-icon-7: rgb(206, 234, 237);
+
+  --color-white-key: rgb(255, 255, 255);
+  --color-black-key: rgb(0, 0, 0);
+
+  --color-box-shadow-1: rgb(0, 0, 0, 0.2);
+  --color-lbox-shadow-2: rgb(0, 0, 0, 0.1);
+  --color-sbox-shadow-3: rgb(0, 0, 0, 0.15);
+
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: monospace, 'Inter', sans-serif;
+
+  background-color: var(--color-bg-main-1);
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}

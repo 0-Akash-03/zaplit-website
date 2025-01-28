@@ -1,0 +1,127 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  background-color: var(--color-white-key);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px var(--color-box-shadow-1);
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-logo h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-heading-1);
+  font-family: var(--font-secondary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-des-1);
+  font-family: var(--font-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-heading-1);
+}
+
+.nav-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-btn-1);
+  font-family: var(--font-secondary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: var(--color-white-key);
+  font-family: var(--font-secondary);
+}
+
+.nav-btn:hover {
+  background-color: var(--color-btn-hover-1);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: var(--color-heading-1);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--color-white-key);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-link {
+    margin: 1rem 0;
+  }
+}
