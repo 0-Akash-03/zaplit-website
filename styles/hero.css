@@ -175,3 +175,49 @@
 .delay-4 {
   animation-delay: 1.6s !important;
 }
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+
+  .boxes {
+    margin: 2rem auto;
+    padding: 0.3rem;
+  }
+
+  .bottom-row {
+    margin-left: 0;
+  }
+  
+  /* Hide canvas on mobile as connections might not make sense in vertical layout */
+  .connection-line {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-content h1 {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+
+  .main-content p {
+    text-align: left;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
