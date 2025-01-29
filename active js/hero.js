@@ -59,7 +59,7 @@ function drawLines() {
     // Set common line styles
     ctx.setLineDash([dashLength, gapLength]);
     ctx.lineDashOffset = -dashOffset;
-    ctx.strokeStyle = '#666';
+    ctx.strokeStyle = 'rgb(81, 81, 95)';
     ctx.lineWidth = 2;
     
     // Draw first curved line (box1 to box2)

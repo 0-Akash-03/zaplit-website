@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
     <link rel="stylesheet" href="/styles/hero.css" />
+    <link rel="stylesheet" href="/styles/hiw-sec-1.css" />
 
     <script src="/active js/nav.js" defer></script>
     <script src="/active js/hero.js" defer></script>
+    <script src="/active js/audience.js" defer></script>
   </head>
   <body>
     <header>
@@ -69,11 +71,13 @@
         <ul class="boxes">
           <!-- Add this canvas element right after the ul opening tag -->
           <canvas id="connectionLine" class="connection-line"></canvas>
-          
+
           <!-- Top Row -->
           <div class="top-row">
             <li>
-              <div class="small-box" id="box-1"><p>Custom Web <span>Traffic</span></p></div>
+              <div class="small-box" id="box-1">
+                <p>Custom Web <span>Traffic</span></p>
+              </div>
             </li>
             <li>
               <div class="small-box" id="box-4">
@@ -95,6 +99,253 @@
             </li>
           </div>
         </ul>
+      </section>
+
+      <section class="how-it-works-1">
+        <p class="how-it-works-text">How it works??</p>
+        <div class="full-content-box">
+          <div class="left-content-box">
+            <div class="left-white-box">
+              <div class="black-box">
+                <p>Custom Audience</p>
+              </div>
+              <div class="ca-boxes-container">
+                <canvas id="caConnectionLine" class="ca-connection-line"></canvas>
+                <ul class="ca-boxes">
+                  <li class="ca-web-box" id="ca-box-1">
+                    <div class="upper-box-sec-ca">
+                      <div class="left-box-sec-ca-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+                          />
+                        </svg>
+                        <p>Website</p>
+                      </div>
+                      <div class="right-box-sec-ca-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lower-box-sec-ca">
+                      <p>1. Web traffic must be over 1k/mo</p>
+                    </div>
+                  </li>
+                  <li class="ca-pixel-box" id="ca-box-2">
+                    <div class="upper-box-sec-ca">
+                      <div class="left-box-sec-ca-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"
+                          />
+                        </svg>
+                        <p>Pixels</p>
+                      </div>
+                      <div class="right-box-sec-ca-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lower-box-sec-ca">
+                      <p>2. Adding pixels to the website</p>
+                    </div>
+                  </li>
+                  <li class="ca-custom-aud-box" id="ca-box-3">
+                    <div class="upper-box-sec-ca">
+                      <div class="left-box-sec-ca-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"
+                          />
+                        </svg>
+                        <p>Custom audience</p>
+                      </div>
+                      <div class="right-box-sec-ca-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lower-box-sec-ca">
+                      <p>2. Gathering all the web traffic</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="social-pixels">
+                  <li class="fb-pixel-box-ca" id="ca-box-4">
+                    <div class="upper-box-sec-ca">
+                      <div class="left-box-sec-ca-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"
+                          />
+                        </svg>
+                        <p>Facebook pixel</p>
+                      </div>
+                      <div class="right-box-sec-ca-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lower-box-sec-ca">
+                      <p>a. Adding fb pixel to the website</p>
+                    </div>
+                  </li>
+                  <li class="insight-tag-box-ca" id="ca-box-5">
+                    <div class="upper-box-sec-ca">
+                      <div class="left-box-sec-ca-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"
+                          />
+                        </svg>
+                        <p>Insight Tag</p>
+                      </div>
+                      <div class="right-box-sec-ca-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lower-box-sec-ca">
+                      <p>b. Adding LinkedIn insight tag</p>
+                    </div>
+                  </li>
+                  <li class="google-tag-box-ca" id="ca-box-6">
+                    <div class="upper-box-sec-ca">
+                      <div class="left-box-sec-ca-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"
+                          />
+                        </svg>
+                        <p>Google Tag</p>
+                      </div>
+                      <div class="right-box-sec-ca-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24px"
+                          viewBox="0 -960 960 960"
+                          width="24px"
+                          fill="#000000"
+                        >
+                          <path
+                            d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lower-box-sec-ca">
+                      <p>c. Adding Google tag to the website</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-content-box">
+            <ul class="right-content">
+              <li class="tag">
+                <p>Custom web audience</p>
+              </li>
+              <li class="content-heading-right">
+                <h2>Creating custom audience</h2>
+              </li>
+              <li class="content-text-right">
+                <p>
+                  We'll be adding LinkedIn insight tag, Google Tag, and Meta
+                  Pixel in your website to directly get the web traffic data.
+                  Using this data, we'll be able to create a custom audience
+                  that can be used for conversion remarketing.
+                </p>
+              </li>
+              <li class="cta-btn-right">
+                <button class="cta-btn">
+                  <a href="/chat">level up conversions &#x2192;</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>
