@@ -1,0 +1,351 @@
+.systems {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: var(--color-bg-main-1);
+}
+
+.systems-cotainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.left-side-systems {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-side-systems {
+  flex: 0.8;
+}
+
+.top-system-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+.top-system-content h2 {
+  font-size: 1.9rem;
+  align-self: flex-start;
+  font-family: var(--font-primary);
+  color: var(--color-heading-1);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.top-system-content p {
+  font-size: 0.9rem;
+  font-family: var(--font-primary);
+  color: var(--color-des-1);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.system-combined-container {
+  background-color: var(--color-bg-white);
+  padding: 5rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  position: relative;
+  z-index: 2;
+  align-self: flex-start;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.system-dashed-line {
+  position: absolute;
+  top: 50%;
+  right: -200px; /* Adjust based on your layout */
+  width: 200px; /* Adjust width based on distance between containers */
+  height: 2px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.inside-system-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.company-logo-circle {
+  background-color: var(--color-bg-boxes);
+  padding: 0.1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.company-logo-circle img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.both-systems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.your-existing-system,
+.our-conversion-system {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  background-color: var(--color-bg-boxes);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 5px 0 var(--color-box-shadow-1);
+  width: 100%;
+  text-align: left;
+}
+
+.system-icon {
+  background-color: var(--color-icon-1);
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.system-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.system-text p {
+  font-size: 0.8rem;
+  font-family: var(--font-secondary);
+  color: var(--color-des-1);
+  font-weight: 700;
+}
+
+/* Right side */
+
+.right-side-systems {
+  background-color: var(--color-bg-boxes-3);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  width: 500px;
+  z-index: 2;
+}
+
+.right-side-benefit-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.benefit-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  background-color: var(--color-bg-boxes);
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 3px 0 var(--color-box-shadow-1);
+  width: auto;
+  text-align: left;
+}
+
+.benefit-box-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.benefit-box-icon {
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-box-icon-1 {
+  background-color: var(--color-icon-1);
+}
+
+.benefit-box-icon-2 {
+  background-color: var(--color-icon-2);
+}
+
+.benefit-box-icon-3 {
+  background-color: var(--color-icon-3);
+}
+
+.benefit-box-icon-4 {
+  background-color: var(--color-icon-4);
+}
+
+.benefit-box-icon-5 {
+  background-color: var(--color-icon-5);
+}
+
+.benefit-box-icon-6 {
+  background-color: var(--color-icon-6);
+}
+
+.benefit-box-text p {
+  font-size: 0.8rem;
+  font-family: var(--font-primary);
+  color: var(--color-des-1);
+  font-weight: 600;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .systems-cotainer {
+    padding: 2rem;
+  }
+
+  .top-system-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .top-system-content p {
+    font-size: 0.8rem;
+  }
+
+  .benefit-box {
+    padding: 0.8rem;
+  }
+
+  .benefit-box-text p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .systems-cotainer {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem;
+  }
+
+  .left-side-systems,
+  .right-side-systems {
+    width: 100%;
+  }
+
+  .top-system-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .system-combined-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .right-side-systems {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-side-benefit-boxes {
+    max-width: 500px;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  /* Hide canvas on mobile */
+  .system-dashed-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .systems-cotainer {
+    padding: 1rem;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .top-system-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .top-system-content p {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  .system-combined-container {
+    padding: 1rem;
+  }
+
+  .company-logo-circle {
+    width: 60px;
+    height: 60px;
+    display: none;
+  }
+
+  .company-logo-circle img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .both-systems {
+    gap: 0.5rem;
+  }
+
+  .your-existing-system,
+  .our-conversion-system {
+    padding: 0.5rem;
+  }
+
+  .system-icon {
+    padding: 0.3rem;
+  }
+
+  .system-text p {
+    font-size: 0.65rem;
+  }
+
+  .benefit-box {
+    padding: 0.6rem;
+  }
+
+  .benefit-box-icon {
+    padding: 0.4rem;
+  }
+
+  .benefit-box-text p {
+    font-size: 0.65rem;
+  }
+
+  .plus-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
