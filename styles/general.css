@@ -22,6 +22,7 @@ html {
 
   --color-tag-1: rgb(129, 188, 247);
   --color-tag-2: rgb(254, 189, 89);
+  --color-tag-3: rgb(76, 162, 242);
 
   --color-gray-1: rgb(255, 255, 255);
   --color-gray-2: rgb(249, 248, 246);
@@ -54,4 +55,16 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-primary);
+}
+
+/* Change text selection color */
+::selection {
+  background-color: var(--color-main-blue-1);
+  color: var(--color-black-key);
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: var(--color-main-blue-1);
+  color: var(--color-black-key);
 }
