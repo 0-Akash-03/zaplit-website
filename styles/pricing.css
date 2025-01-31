@@ -123,12 +123,6 @@
   margin-top: 1rem;
 }
 
-.chat-btn-pricing {
-  margin: 0rem;
-  margin-top: 2rem;
-  width: 100%;
-}
-
 .pay-box {
   width: 70%;
   margin-top: 2rem;
@@ -149,8 +143,37 @@
   text-align: left;
 }
 
-.pay-button {
+.pay-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  position: relative;
+  margin: 2rem 0 0 0;
+}
+
+.pay-button {
+  background-color: var(--color-btn-1);
+  color: var(--color-white-key);
+  padding: 1rem 20%;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+
+  text-decoration: none;
+  color: var(--color-white-key);
+  font-family: var(--font-secondary);
+}
+
+.pay-button:hover {
+  background-color: var(--color-btn-hover-1);
+  transform: translateY(-2px);
 }
 
 /* Media Queries */
@@ -250,12 +273,6 @@
 
   .feature-item {
     font-size: 0.8rem;
-  }
-
-  .pay-button {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
   }
 }
 
