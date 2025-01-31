@@ -74,16 +74,13 @@
   }
 }
 
-.cta-btn-container {
+.cta-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.cta-btn {
   background-color: var(--color-btn-1);
   color: var(--color-white-key);
-  padding: 1rem 2rem;
+  padding: 1rem 1.8rem;
   border-radius: 5px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -91,19 +88,24 @@
   cursor: pointer;
   margin: 2rem auto;
   transition: transform 0.3s ease;
+  width: 270px;
+}
+
+.cta-btn {
+  text-decoration: none;
+  color: var(--color-white-key);
+  font-family: var(--font-secondary);
+}
+
+/* Add a new delay class for the CTA button */
+.delay-4 {
+  animation-delay: 1s !important;
 }
 
 .cta-btn:hover {
   background-color: var(--color-btn-hover-1);
   transform: translateY(-2px);
 }
-
-.cta-btn a {
-  text-decoration: none;
-  color: var(--color-white-key);
-  font-family: var(--font-secondary);
-}
-
 /* Boxes */
 
 .boxes {
@@ -175,13 +177,13 @@
   z-index: 1;
 }
 
-/* Add a new delay class for the CTA button */
-.delay-4 {
-  animation-delay: 1.6s !important;
-}
-
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
   .hero {
     padding: 2rem 1rem;
   }
@@ -196,14 +198,14 @@
   }
 
   .boxes {
-    margin: 2rem auto;
+    margin: 4rem auto;
     padding: 0.3rem;
   }
 
   .bottom-row {
     margin-left: 0;
   }
-  
+
   /* Hide canvas on mobile as connections might not make sense in vertical layout */
   .connection-line {
     display: block;
@@ -218,10 +220,5 @@
 
   .main-content p {
     text-align: left;
-  }
-
-  .cta-btn {
-    width: 100%;
-    max-width: 300px;
   }
 }

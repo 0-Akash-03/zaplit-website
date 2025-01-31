@@ -55,7 +55,7 @@
 .nav-btn {
   background-color: var(--color-btn-1);
   font-family: var(--font-secondary);
-  color: white;
+  color: var(--color-white-key);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -64,7 +64,7 @@
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: var(--color-white-key);
-  font-family: var(--font-secondary);
+  font-size: 0.85rem;
 }
 
 .nav-btn:hover {
