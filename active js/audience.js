@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let dashOffset = 0;
   const dashLength = 5;
   const gapLength = 5;
-  const animationSpeed = 1;
+  const animationSpeed = 0.5;
 
   function drawDashedLine(startX, startY, endX, endY, offset) {
     ctx.beginPath();

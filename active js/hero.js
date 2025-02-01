@@ -50,7 +50,7 @@ function drawLines() {
   let dashOffset = 0;
   const dashLength = 5;
   const gapLength = 5;
-  const speed = 1;
+  const speed = 0.5;
   
   function animate() {
     // Clear canvas

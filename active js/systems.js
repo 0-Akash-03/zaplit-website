@@ -32,7 +32,7 @@ function createSystemDashedLine() {
     ctx.stroke();
 
     // Update dash offset for animation
-    dashOffset -= 1;
+    dashOffset -= 0.5;
     if (dashOffset < -dashArray[0] * 2) {
       dashOffset = 0;
     }
