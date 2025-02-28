@@ -132,17 +132,15 @@
                   p(cal, ar);
                 };
             })(window, 'https://app.cal.com/embed/embed.js', 'init');
-            Cal('init', '45min', { origin: 'https://cal.com' });
+            Cal('init', '30min', { origin: 'https://cal.com' });
 
-            Cal.ns['45min']('inline', {
+            Cal.ns['30min']('inline', {
               elementOrSelector: '#my-cal-inline',
-              config: { layout: 'month_view', theme: 'light' },
-              calLink: 'zaplit/45min',
+              config: { layout: 'month_view' },
+              calLink: 'zaplit/30min',
             });
 
-            Cal.ns['45min']('ui', {
-              theme: 'light',
-              cssVarsPerTheme: { light: { 'cal-brand': '#292929' } },
+            Cal.ns['30min']('ui', {
               hideEventTypeDetails: false,
               layout: 'month_view',
             });
